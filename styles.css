@@ -3,6 +3,7 @@ body {
   background-color: #ede7dd;
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 }
 
 .header {
@@ -46,9 +47,11 @@ a:hover {
   max-width: 400px;
   margin: 0 auto;
 }
+
 hr {
   padding: 2rem;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
