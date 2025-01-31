@@ -37,12 +37,33 @@ a:hover {
 .main img {
   width: 40%;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .main p {
   font-size: 1rem;
   max-width: 400px;
   margin: 0 auto;
+}
+hr {
+  padding: 2rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  margin-bottom: 4rem;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
 
 footer {
