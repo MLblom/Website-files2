@@ -1,32 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
   background-color: #ede7dd;
-  margin: 0;
-  padding: 0;
+  line-height: 1.5;
+  font-weight: 400;
   min-width: 1200px;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #9dccd6;
-  margin-bottom: 20px;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
   padding: 20px;
   margin: 0;
 }
 
-.menu a {
+.main-nav {
   font-size: 1rem;
   margin-left: 20px;
   text-decoration: none;
+  list-style: none;
   color: #264158;
-}
-
-a:hover {
-  color: #9dccd6;
 }
 
 .main {
@@ -39,7 +85,10 @@ a:hover {
 .main img {
   width: 40%;
   margin: 0 auto;
-  margin-bottom: 2rem;
+
+  margin: 2rem 2rem 2rem;
+  display: block;
+  border-radius: 20px;
 }
 
 .main p {
@@ -62,6 +111,7 @@ hr {
 .gallery-item img {
   display: block;
   width: 100%;
+  border-radius: 20px;
   margin-bottom: 4rem;
   transition: all 0.4s;
 }
