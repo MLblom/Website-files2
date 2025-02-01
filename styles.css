@@ -27,6 +27,8 @@ body {
 
 .main-nav-list {
   list-style: none;
+  text-decoration: none;
+  color: #264158;
   display: flex;
   align-items: center;
   gap: 3.2rem;
