@@ -12,7 +12,7 @@ body {
   min-width: 1200px;
 }
 
-.header {
+#header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,38 +27,38 @@ body {
 
 .main-nav-list {
   list-style: none;
-  text-decoration: none;
+
   color: #264158;
   display: flex;
   align-items: center;
   gap: 3.2rem;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.main-nav-list:link,
+.main-nav-list:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #264158;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
+.main-nav-list:hover,
+.main-nav-list:active {
   color: #cf711f;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
+.main-nav-list.nav-cta:link,
+.main-nav-list.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
 }
 
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
+.main-nav-list.nav-cta:hover,
+.main-nav-list.nav-cta:active {
   background-color: #cf711f;
 }
 
@@ -86,8 +86,6 @@ h1 {
 
 .main img {
   width: 40%;
-  margin: 0 auto;
-
   margin: 2rem 2rem 2rem;
   display: block;
   border-radius: 20px;
@@ -108,6 +106,10 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
 }
 
 .gallery-item img {
