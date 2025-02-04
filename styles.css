@@ -9,7 +9,6 @@ body {
   background-color: #ede7dd;
   line-height: 1.5;
   font-weight: 400;
-  min-width: 1200px;
 }
 
 #header {
@@ -27,25 +26,24 @@ body {
 
 .main-nav-list {
   list-style: none;
-
   color: #264158;
   display: flex;
   align-items: center;
   gap: 3.2rem;
 }
 
-.main-nav-list:link,
-.main-nav-list:visited {
+.main-nav-list a:link,
+.main-nav-list a:visited {
   display: inline-block;
   text-decoration: none;
   color: #264158;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1rem;
   transition: all 0.3s;
 }
 
-.main-nav-list:hover,
-.main-nav-list:active {
+.main-nav-list a:hover,
+.main-nav-list a:active {
   color: #cf711f;
 }
 
@@ -92,9 +90,9 @@ h1 {
 }
 
 .main p {
-  font-size: 1rem;
-  max-width: 400px;
-  margin: 0 auto;
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 4rem;
 }
 
 hr {
@@ -103,7 +101,8 @@ hr {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto); /* 2 rijen */
   gap: 1.6rem;
   padding: 1.6rem;
 }
@@ -126,8 +125,16 @@ hr {
 
 footer {
   background-color: #9dccd6;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  padding: 20px;
+  color: #fff;
+  padding: 64px;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 8px;
+}
+
+.footer-content {
+  text-align: center;
 }

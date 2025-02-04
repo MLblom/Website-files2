@@ -1,0 +1,61 @@
+/* Voor tablets (max 1024px) */
+@media (max-width: 1024px) {
+  #header {
+    flex-direction: column;
+    height: auto;
+    padding: 1.6rem;
+  }
+
+  .main-nav-list {
+    gap: 1.6rem;
+    padding: 2rem;
+  }
+
+  .main {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main img {
+    width: 80%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* Van 2 kolommen naar 1 kolom */
+  }
+}
+
+/* Voor mobiele telefoons (max 768px) */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .main p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* 1 kolom layout */
+    padding: 1rem;
+  }
+
+  footer {
+    position: relative; /* Voorkomt overlap */
+    text-align: center;
+  }
+}
